@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
     <title>Paper Rock Scissors Game</title>
 </head>
 <body>
@@ -13,34 +14,37 @@
         </header>
         <main>
             <div class="score-board">
-                <div class="user">
+                <div id="user-label" class="user">
                     <img src="./img/user.png" alt="">
-                    <p>User</p>
+                    <h2>User</h2>
                 </div>
-                <div class="computer">
+                <div class="span">
+                    <span id="user_score">0</span> : <span id="computer_score">0</span>
+                </div>
+                <div id="computer-label" class="computer">
                     <img src="./img/computer.png" height="460px" width="460px" alt="">
-                    <p>Computer</p>
+                    <h2>Computer</h2>
                 </div>
-                <span id="user-score">0</span>:<span id="computer-score">0</span>
             </div>
             <div class="game-over">
-                <p>Paper covers rock. You win!</p>
+                <p id="result"></p>
             </div>
             <div class="choices">
                 <div class="choice" id="rock">
-                    <img src="./img/rockk.png" alt="">
+                    <img src="./img/rockk.png" alt="Rock image">
                 </div>
                 <div class="choice" id="paper">
-                    <img src="./img/paper.png" alt="">
+                    <img src="./img/paperr.png" alt="Paper image">
                 </div>
                 <div class="choice" id="scissors">
-                    <img src="./img/scissors.png" alt="">
+                    <img src="./img/scissorss.png" alt="">
                 </div>
             </div>
-    
+            <div id="action-message" class="action">
+                <p>Try your luck!</p>
+            </div>
         </main>
     </div>
-    
-
+    <script src="game.js" charset="UTF-8"></script>
 </body>
 </html>

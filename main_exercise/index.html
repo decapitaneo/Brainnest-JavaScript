@@ -7,6 +7,26 @@
     <title>Document</title>
 </head>
 <body>
+    <!-- 
+        const because I will not change de value
+        
+        computerPlay: this function generates a random number between 0 and 2 because our array with Rock, 
+        Paper, Scissors has
+        3 positions (from 0 to 2) and returns the random position from the array.
+
+        Single round: This function receives the players' and computer's choices (that must be Rock, Paper or Scissors).
+        And tells the player if he/she won or lost depending on which choice the player and the computer did
+
+        if the player writes something that is not one of the valid choices, the function will not work as it should
+        because I am not validating if the value is one of these 3.
+
+        game: This function executes the singleRound function 5 times and for each time it asks the user to choose
+        Rock, Paper or Scissors, it randomly chooses one of them for the computer sends both choices
+        to the singleRound function. For every time singleRound is called, we print the result
+
+        After the loop, if the player won at least 2 matches, we tell the player he/she
+        won more than 50% of the matches
+     -->
     <script type="text/javascript" src="game.js"></script>
 </body>
 </html>
